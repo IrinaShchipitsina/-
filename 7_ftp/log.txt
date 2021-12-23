@@ -1,0 +1,278 @@
+Прослушиваем порт 6666
+request: meow=login1=password\=cur_dir0=file_sizel
+response: bad request
+request: meow=login1=password\=cur_dir0=file_sizeget_file 1.txt
+Has been sent
+response: b'Invalid path$FAILED$'
+request: meow=login1=password\=cur_dir0=file_sizepwd
+response: \
+request: meow=login1=password\=cur_dir0=file_sizemkdir new
+response: successfully
+Прослушиваем порт:  6666
+Request:  meow=login1=password\=cur_dir0=file_sizels
+Response:  new
+Request:  meow=login1=password\=cur_dir0=file_sizecd new
+Response:  \new\
+Request:  meow=login1=password\new\=cur_dir0=file_sizetouch file.txt
+Response:  successfully
+Request:  meow=login1=password\new\=cur_dir0=file_sizeremove file.txt
+Response:  successfully
+Прослушиваем порт:  9090
+Request:  new=loginnew=password\=cur_dir0=file_sizels
+Response:  
+Request:  new=loginnew=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  new=loginnew=password\=cur_dir0=file_sizecd new
+Response:  \
+Request:  new=loginnew=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  new=loginnew=password\=cur_dir0=file_sizels
+Response:  
+Request:  new=loginnew=password\=cur_dir0=file_sizetouch 1.txt
+Response:  successfully
+Request:  new=loginnew=password\=cur_dir0=file_sizermtree new
+Response:  Invalid path
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  user=loginuser=password\=cur_dir0=file_sizels
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizepwd
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  user=loginuser=password\=cur_dir0=file_sizels
+Response:  
+Request:  user=loginuser=password\=cur_dir0=file_sizemkdir folder
+Response:  successfully
+Request:  user=loginuser=password\=cur_dir0=file_sizecd folder
+Response:  \folder\
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizetouch file.txt
+Response:  successfully
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizemkdir another_folder
+Response:  successfully
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizels
+Response:  another_folder
+file.txt
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizecd another_folder
+Response:  \folder\another_folder\
+Request:  user=loginuser=password\folder\another_folder\=cur_dir0=file_sizemkdir inner_folder
+Response:  successfully
+Request:  user=loginuser=password\folder\another_folder\=cur_dir0=file_sizecd folder
+Response:  \folder\another_folder\
+Request:  user=loginuser=password\folder\another_folder\=cur_dir0=file_sizermtree another_folder
+Response:  Invalid path
+Request:  user=loginuser=password\folder\another_folder\=cur_dir0=file_sizecd \folder
+folder
+Response:  \folder\
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizermtree another_folder
+Response:  successfully
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizels
+Response:  file.txt
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizecat file.txt
+Response:  some letters
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizeremove file.txt
+Response:  successfully
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizels
+Response:  
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizetouch new.txt
+Response:  successfully
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizels
+Response:  folder
+Request:  user=loginuser=password\=cur_dir0=file_sizecd folder
+Response:  \folder\
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizels \
+
+Response:  new.txt
+Request:  user=loginuser=password\folder\=cur_dir0=file_sizecd \
+
+Response:  \
+Request:  user=loginuser=password\=cur_dir0=file_sizeget 1.txt
+Response:  bad request
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file 1.txt
+Has been sent
+Response:  b'Invalid path$FAILED$'
+Прослушиваем порт:  9090
+Request:  meowy=login3=password\=cur_dir0=file_sizels
+Response:  
+Прослушиваем порт:  9090
+Request:  user=login123=password\=cur_dir0=file_sizermtree
+Response:  invalid password
+Request:  user=login123=password\=cur_dir0=file_sizecd folder
+Response:  invalid password
+Request:  admin=loginadmin=password\=cur_dir0=file_sizels
+Response:  1.txt
+client.py
+log.txt
+meow
+meowy
+new
+server.py
+test.py
+user
+users.csv
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file 1.txt
+Has been sent.
+Response:  b'Invalid path$FAILED$'
+Request:  user=loginuser=password\=cur_dir0=file_sizetouch txt.txt
+Response:  successfully
+Request:  meowy=login1=password\=cur_dir0=file_sizetouch txt.txt
+Response:  invalid password
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file folder/new.txt
+Has been sent.
+Response:  b'$$STREAM_FILE_END_FLAG$$'
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file 1.txt
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file 1.txt
+Прослушиваем порт:  9090
+Request:  user=loginuser=password\=cur_dir0=file_sizeget_file folder/new.txt
+Has been sent.
+Response:  b'$$STREAM_FILE_END_FLAG$$'
+Request:  user=loginuser=password\=cur_dir0=file_sizesend_file 1.txt
+Has been received.
+Response:  Uploaded successfully.
+Прослушиваем порт:  9090
+Request:  admin=loginadmin=password\=cur_dir0=file_sizels
+Response:  1.txt
+client.py
+log.txt
+meow
+meowy
+new
+new.txt
+server.py
+test.py
+user
+users.csv
+Request:  test=logintest=password\=cur_dir0=file_sizemkdir test1
+Response:  successfully
+Request:  test=logintest=password\=cur_dir0=file_sizecd ...../test1
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizecd ./test1
+Response:  \test1\
+Request:  test=logintest=password\test1\=cur_dir0=file_sizemkdir ../test1/test11
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  test11
+Request:  test=logintest=password\test1\=cur_dir0=file_sizepwd
+Response:  \test1\
+Request:  test=logintest=password\test1\=cur_dir0=file_sizermtree test11
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  
+Request:  test=logintest=password\test1\=cur_dir0=file_sizetouch 1.txt
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizerename 1.txt 11.txt
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  11.txt
+Request:  test=logintest=password\test1\=cur_dir0=file_sizeremove 1.txt
+Response:  Invalid path
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecat 1.txt
+Response:  Invalid path
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecat 11.txt
+Response:  
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecd ////
+
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizecd \
+
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizermtree test1
+Response:  successfully
+Request:  test=logintest=password\=cur_dir0=file_sizels
+Response:  
+Прослушиваем порт:  9090
+Request:  test=logintest=password\=cur_dir0=file_sizemkdir test1
+Response:  successfully
+Request:  test=logintest=password\=cur_dir0=file_sizecd ...../test1
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizecd ./test1
+Response:  \test1\
+Request:  test=logintest=password\test1\=cur_dir0=file_sizemkdir ../test1/test11
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  test11
+Request:  test=logintest=password\test1\=cur_dir0=file_sizepwd
+Response:  \test1\
+Request:  test=logintest=password\test1\=cur_dir0=file_sizermtree test11
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  
+Request:  test=logintest=password\test1\=cur_dir0=file_sizetouch 1.txt
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizerename 1.txt 11.txt
+Response:  successfully
+Request:  test=logintest=password\test1\=cur_dir0=file_sizels
+Response:  11.txt
+Request:  test=logintest=password\test1\=cur_dir0=file_sizeremove 1.txt
+Response:  Invalid path
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecat 1.txt
+Response:  Invalid path
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecat 11.txt
+Response:  
+Request:  test=logintest=password\test1\=cur_dir0=file_sizecd ////
+
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizecd \
+
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizepwd
+Response:  \
+Request:  test=logintest=password\=cur_dir0=file_sizermtree test1
+Response:  successfully
+Request:  test=logintest=password\=cur_dir0=file_sizels
+Response:  
+Прослушиваем порт 6666
+request: test=logintest=password\=cur_dir0=file_sizemkdir test1
+response: successfully
+request: test=logintest=password\=cur_dir0=file_sizecd ...../test1
+response: \
+request: test=logintest=password\=cur_dir0=file_sizecd ./test1
+response: \test1\
+request: test=logintest=password\test1\=cur_dir0=file_sizemkdir ../test1/test11
+response: successfully
+request: test=logintest=password\test1\=cur_dir0=file_sizels
+response: test11
+request: test=logintest=password\test1\=cur_dir0=file_sizepwd
+response: \test1\
+request: test=logintest=password\test1\=cur_dir0=file_sizermtree test11
+response: successfully
+request: test=logintest=password\test1\=cur_dir0=file_sizels
+response: 
+request: test=logintest=password\test1\=cur_dir0=file_sizetouch 1.txt
+response: successfully
+request: test=logintest=password\test1\=cur_dir0=file_sizerename 1.txt 11.txt
+response: successfully
+request: test=logintest=password\test1\=cur_dir0=file_sizels
+response: 11.txt
+request: test=logintest=password\test1\=cur_dir0=file_sizeremove 1.txt
+response: Invalid path
+request: test=logintest=password\test1\=cur_dir0=file_sizecat 1.txt
+response: Invalid path
+request: test=logintest=password\test1\=cur_dir0=file_sizecat 11.txt
+response: 
+request: test=logintest=password\test1\=cur_dir0=file_sizecd ////
+
+response: \
+request: test=logintest=password\=cur_dir0=file_sizepwd
+response: \
+request: test=logintest=password\=cur_dir0=file_sizecd \
+
+response: \
+request: test=logintest=password\=cur_dir0=file_sizepwd
+response: \
+request: test=logintest=password\=cur_dir0=file_sizermtree test1
+response: successfully
+request: test=logintest=password\=cur_dir0=file_sizels
+response: 
+Прослушиваем порт:  9090
