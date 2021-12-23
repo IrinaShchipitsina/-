@@ -1,0 +1,6 @@
+Server is running at the port 9090.
+Client 192.168.56.1 has connected.
+192.168.56.1 has registered.
+192.168.56.1 logged in.
+[WinError 10054] Удаленный хост принудительно разорвал существующее подключение 192.168.56.1
+Connection with 192.168.56.1 closed.
