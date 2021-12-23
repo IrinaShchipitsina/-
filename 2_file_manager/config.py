@@ -1,0 +1,1 @@
+main_folder = r'''C:\Users\nokia\OneDrive\практикум\file_manager'''
